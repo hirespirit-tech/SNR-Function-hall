@@ -1,0 +1,16 @@
+# Needed on GoDaddy (Apache) hosting so that direct links like
+# yoursite.com/about or yoursite.com/gallery load the React app
+# instead of a 404, since this is a single-page app.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # If the request is for a real file or folder, serve it as-is
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Otherwise, send every request to index.html and let the app handle routing
+  RewriteRule ^ index.html [L]
+</IfModule>
