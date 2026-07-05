@@ -1,8 +1,6 @@
 import venue1 from "@assets/ChatGPT_Image_Jun_27,_2026,_03_50_08_PM_1782555630400.png";
 import venue2 from "@assets/ChatGPT_Image_Jun_27,_2026,_02_19_50_PM_1782627413056.png";
-import venue3 from "@assets/ChatGPT_Image_Jun_27,_2026,_02_19_50_PM_1782556234957.png";
 import venue4 from "@assets/ChatGPT_Image_Jun_27,_2026,_02_35_49_PM_1782553971114.png";
-import venue5 from "@assets/ChatGPT_Image_Jun_27,_2026,_02_40_29_PM_1782553971113.png";
 import venue6 from "@assets/ChatGPT_Image_Jun_27,_2026,_01_11_57_PM_1783143370672.jpg";
 import venue7 from "@assets/ChatGPT_Image_Jun_27,_2026,_01_24_49_PM_1783143352477.jpg";
 
@@ -56,9 +54,7 @@ export interface GalleryItem {
 export const GALLERY_IMAGES: GalleryItem[] = [
   { id: "1", title: "Grand Hall Setup", category: "Hall", type: "image", url: venue1 },
   { id: "2", title: "Guest Room Interior", category: "Guest Rooms", type: "image", url: venue2 },
-  { id: "3", title: "Venue Decor", category: "Decoration", type: "image", url: venue3 },
   { id: "4", title: "Stage & Mandap Setup", category: "Decoration", type: "image", url: venue4 },
-  { id: "5", title: "Dining Arrangement", category: "Dining", type: "image", url: venue5 },
   { id: "6", title: "Venue Exterior", category: "Hall", type: "image", url: venue6 },
   { id: "7", title: "Event Ambience", category: "Decoration", type: "image", url: venue7 },
   { id: "8", title: "Wedding Decor 1", category: "Wedding", type: "image", url: wedding_gallery_1 },
